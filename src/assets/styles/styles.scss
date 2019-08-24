@@ -1,6 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'variables';
 
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('../fonts/NunitoSans-Regular.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Nunito Sans Black';
+  src: url('../fonts/NunitoSans-Black.ttf') format("opentype");
+}
+
+body {
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nunito Sans';
+  text-transform: uppercase;
+  margin-top: $margin-md;
+  margin-bottom: $margin-md;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}
+
+p {
+  font-family: 'Nunito Sans';
+}
+
+p.content {
+  line-height: 2;
+}
+
+p.title {
+  color: $title;
+  font-size: $h2-font-size;
+}
+
+p.subtitle {
+  font-family: 'Nunito Sans Black';
+  font-size: $h6-font-size;
+  margin-top: $margin-sm;
+  margin-bottom: $margin-sm;
+}
+
+/* Form */
+.form-control {
+  font-family: 'Nunito Sans';
+  font-size: $input-font-size !important;
+}
+
+/* Layout */
+.main-section {
+  height: 100vh;
+}
+
+.main-section,
+.section {
+  padding: $padding-md;
+  margin-bottom: $margin-lg;
+}
+
 .icon-container {
   background: transparent linear-gradient(180deg, #F95D5D 0%, #D2345B 100%) 0% 0% no-repeat;
   opacity: 1;
@@ -17,10 +108,35 @@
     vertical-align: middle;
   }
 
-  img {
+  img.icon {
     vertical-align: middle;
     width: 95%;
     max-height: 100px;
     max-width: 100px;
   }
+}
+
+.contact-card {
+  background: url('../images/undraw_online_cv_qy9w@2x.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 500px auto;
+}
+
+/* Cards */
+.card {
+  padding: $padding-md;
+  border-radius: $border-radius-lg;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  border: none;
+}
+
+.card-title {
+  font-family: 'Nunito Sans Black';
+  text-transform: none;
+}
+
+/* Utilities */
+.margin-auto {
+  margin: auto;
 }
