@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+
+.icon-container {
+  background: transparent linear-gradient(180deg, #F95D5D 0%, #D2345B 100%) 0% 0% no-repeat;
+  opacity: 1;
+  width: 150px;
+  height: 150px;
+  white-space: nowrap;
+  border-radius: 100%;
+  padding: 10%;
+  margin: 10%;
+
+  .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  img {
+    vertical-align: middle;
+    width: 95%;
+    max-height: 100px;
+    max-width: 100px;
+  }
+}

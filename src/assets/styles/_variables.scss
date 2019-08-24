@@ -1,0 +1,51 @@
+// Colours
+$primary: rgb(7, 7, 47);
+$secondary: rgb(225, 180, 0);
+$white: rgb(255, 255, 255);
+$light: rgb(244, 244, 250);
+$light-gray: rgb(231, 231, 241);
+$gray: rgb(66, 66, 89);
+$danger: rgb(244, 103, 153);
+$success: rgb(75, 181, 67);
+
+// Backgrounds
+$body-bg: #f4f4fa;
+
+// Borders
+$border-color: $light-gray;
+$border-radius: 6px;
+$border-radius-lg: 16px;
+
+// Box Shadow
+$box-shadow-dark: 0px 1px 4px 0px $gray;
+$box-shadow-light: 0px 1px 4px 0px rgb(204, 204, 214);
+
+// Buttons
+$btn-border-width: 2px;
+$btn-font-weight: 600;
+$btn-padding-y: 8px;
+$btn-padding-x: 16px;
+$btn-line-height: 24px;
+$btn-font-size: 16px;
+
+$btn-padding-y-sm: 4px;
+$btn-padding-x-sm: 12px;
+$btn-line-height-sm: $btn-line-height;
+$btn-border-radius-sm: $border-radius;
+$btn-font-size-sm: 16px;
+
+// Fonts
+$body-color: $gray;
+$h1-font-size: 36px;
+$h2-font-size: 34px;
+$h3-font-size: 32px;
+$h4-font-size: 28px;
+$h5-font-size: 24px;
+$h6-font-size: 18px;
+$lead-font-weight: 400;
+$lead-font-size: 16px;
+$font-family-sans-serif: "Inter";
+$input-btn-font-family: $font-family-sans-serif;
+
+// Cards
+$card-border-width: 0;
