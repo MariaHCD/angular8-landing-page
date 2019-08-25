@@ -79,9 +79,18 @@ p.content {
   padding-right: $padding-lg;
 }
 
-p.title {
+p.title,
+p.title-sm {
   color: $title;
+}
+
+p.title {
   font-size: $content-font-size;
+}
+
+p.title-sm {
+  color: $title;
+  font-size: $subtitle-font-size;
 }
 
 p.subtitle {
@@ -139,6 +148,18 @@ p.subtitle {
   background-size: 500px auto;
 }
 
+.success-circle {
+  background: transparent linear-gradient(134deg, $secondary 0%, $primary 100%) 0% 0% no-repeat padding-box;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: auto;
+  margin-bottom: $margin-md;
+  color: $white;
+  font-size: 140px;
+  line-height: 300px;
+}
+
 .footer {
   background-image: radial-gradient(at bottom left, rgb(249, 93, 93, 0.1) 70%, transparent 10%);
   background-size: 120% 100%;
@@ -181,6 +202,15 @@ p.subtitle {
   border-radius: 12px;
   opacity: 1;
   border: none;
+}
+
+.is-invalid {
+  border: 1px solid $danger;
+}
+
+.invalid {
+  color: $danger;
+  font-size: $footer-font-size;
 }
 
 /* Utilities */
