@@ -33,6 +33,20 @@ h6 {
 
 h1 {
   font-size: $h1-font-size;
+  display: inline-block;
+  position: relative;
+  margin-bottom: $margin-lg;
+  padding-bottom: $padding-lg;
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 5px;
+  bottom: 0;
+  left: 40%;
+  background: transparent linear-gradient(90deg, $secondary 0%, $primary 100%) 0% 0% no-repeat padding-box;
 }
 
 h2 {
@@ -61,11 +75,13 @@ p {
 
 p.content {
   line-height: 2;
+  padding-left: $padding-lg;
+  padding-right: $padding-lg;
 }
 
 p.title {
   color: $title;
-  font-size: $h2-font-size;
+  font-size: $content-font-size;
 }
 
 p.subtitle {
@@ -93,7 +109,7 @@ p.subtitle {
 }
 
 .icon-container {
-  background: transparent linear-gradient(180deg, #F95D5D 0%, #D2345B 100%) 0% 0% no-repeat;
+  background: transparent linear-gradient(180deg, $secondary 0%, $primary 100%) 0% 0% no-repeat;
   opacity: 1;
   width: 150px;
   height: 150px;
@@ -123,17 +139,48 @@ p.subtitle {
   background-size: 500px auto;
 }
 
+.footer {
+  background-image: radial-gradient(at bottom left, rgb(249, 93, 93, 0.1) 70%, transparent 10%);
+  background-size: 120% 100%;
+  background-repeat: no-repeat;
+}
+
+.footer-text {
+  font-size: $footer-font-size;
+  letter-spacing: 0;
+  color: $gray;
+}
+
 /* Cards */
 .card {
   padding: $padding-md;
   border-radius: $border-radius-lg;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border: none;
 }
 
 .card-title {
   font-family: 'Nunito Sans Black';
   text-transform: none;
+}
+
+/* Buttons */
+.button {
+  background: transparent linear-gradient(90deg, $secondary 0%, $primary 100%) 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+  border: none;
+  font-family: 'Nunito Sans';
+  text-transform: uppercase;
+  height: $button-height;
+}
+
+/* Forms */
+.form-control {
+  background: #F9F9F9 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+  border: none;
 }
 
 /* Utilities */
