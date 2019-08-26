@@ -1,4 +1,6 @@
-# Angular8SubmissionsApp
+# Angular 8 Landing Page
+
+A landing page build using Angular 8 with company information and a contact form. Uses laravel-submissions-api to submit the contact form.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
 
