@@ -100,21 +100,9 @@ p.subtitle {
   margin-bottom: $margin-sm;
 }
 
-/* Form */
-.form-control {
-  font-family: 'Nunito Sans';
-  font-size: $input-font-size !important;
-}
-
 /* Layout */
-.main-section {
-  height: 100vh;
-}
-
-.main-section,
 .section {
   padding: $padding-md;
-  margin-bottom: $margin-lg;
 }
 
 .icon-container {
@@ -124,8 +112,11 @@ p.subtitle {
   height: 150px;
   white-space: nowrap;
   border-radius: 100%;
-  padding: 10%;
-  margin: 10%;
+  padding: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
 
   .helper {
     display: inline-block;
@@ -145,7 +136,8 @@ p.subtitle {
   background: url('../images/undraw_online_cv_qy9w@2x.png');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 500px auto;
+  background-size: 350px auto;
+  min-height: 200px;
 }
 
 .success-circle {
@@ -176,8 +168,10 @@ p.subtitle {
 .card {
   padding: $padding-md;
   border-radius: $border-radius-lg;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   border: none;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 .card-title {
@@ -202,6 +196,8 @@ p.subtitle {
   border-radius: 12px;
   opacity: 1;
   border: none;
+  font-family: 'Nunito Sans';
+  font-size: $input-font-size !important;
 }
 
 .is-invalid {
